@@ -1,0 +1,24 @@
+This module extends production work center assignment so a routing operation
+can use work centers shared by multiple parent lines.
+
+Features
+--------
+
+- Add "Shared with Work Centers" on Work Center.
+- Include shared parents when selecting the work center for routing steps.
+- Keep compatibility with the standard production waiting workflow.
+
+Installing
+----------
+
+See INSTALL.
+
+License
+-------
+
+See LICENSE.
+
+Copyright
+---------
+
+See COPYRIGHT.

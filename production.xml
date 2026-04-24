@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="work_center_view_form">
+            <field name="model">production.work.center</field>
+            <field name="inherit" ref="production_work.work_center_view_form"/>
+            <field name="name">work_center_form</field>
+        </record>
+
+        <record model="ir.model.access" id="access_work_center_shared_parent">
+            <field name="model">production.work.center-shared.parent</field>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_work_center_shared_parent_admin">
+            <field name="model">production.work.center-shared.parent</field>
+            <field name="group" ref="production.group_production_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+    </data>
+</tryton>

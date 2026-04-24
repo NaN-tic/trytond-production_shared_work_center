@@ -1,0 +1,17 @@
+Installing
+==========
+
+Prerequisites
+-------------
+
+* See setup.py file.
+
+Installation
+------------
+
+Once you've downloaded and unpacked the source release, enter the
+module directory and run:
+
+    python setup.py install
+
+To use without installation, extract the archive into ``trytond/modules``.
