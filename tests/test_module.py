@@ -9,5 +9,11 @@ class ProductionSharedWorkCenterTestCase(CompanyTestMixin, ModuleTestCase):
     'Test Production Shared Work Center module'
     module = 'production_shared_work_center'
 
+    @property
+    def _skip_company_rule(self):
+        return super()._skip_company_rule | {
+            ('production.work.center-shared.parent', 'company'),
+            }
+
 
 del ModuleTestCase
